@@ -1,0 +1,64 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2b283aff;
+    color:aliceblue;
+    font-size: 1.5em;
+}
+
+p {
+    margin: 0.5em;
+}
+
+.rocket {
+    font-size: 3em;
+}
+
+.time-screen {
+    text-align: center;
+    background-color: lightgrey;
+    color: orangered;
+    text-transform: uppercase;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    padding: 0.5em 1em;
+}
+
+.time-words {
+    word-spacing: 0.5em;
+}
+
+
+.rocket-launching {
+    -webkit-animation: slide-top 4s linear 2s both;
+	        animation: slide-top 4s linear 2s both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+  }
+}
